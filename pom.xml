@@ -16,7 +16,7 @@
     <properties>
         <jetty.port>9097</jetty.port>
         <jetty.stopPort>19097</jetty.stopPort>
-        <performancetest.webservice.host>localhost</performancetest.webservice.host>
+        <performancetest.webservice.host>mozilla.com</performancetest.webservice.host>
         <performancetest.webservice.port>${jetty.port}</performancetest.webservice.port>
         <performancetest.webservice.path>/</performancetest.webservice.path>
         <performancetest.connectTimeout>1000</performancetest.connectTimeout>
@@ -37,8 +37,8 @@
         <profile>
             <id>webapp</id>
             <properties>
-                <performancetest.webservice.host>localhost</performancetest.webservice.host>
-                <performancetest.webservice.port>8078</performancetest.webservice.port>
+<!--                <performancetest.webservice.host>localhost</performancetest.webservice.host>-->
+<!--                <performancetest.webservice.port>8078</performancetest.webservice.port>-->
                 <performancetest.threadCount>5</performancetest.threadCount>
                 <performancetest.loopCount>5</performancetest.loopCount>
             </properties>
@@ -80,7 +80,7 @@
             <plugin>
                 <groupId>com.lazerycode.jmeter</groupId>
                 <artifactId>jmeter-maven-plugin</artifactId>
-                <version>1.9.0</version>
+                <version>2.9.0</version>
                 <configuration>
                     <testResultsTimestamp>false</testResultsTimestamp>
                     <overrideRootLogLevel>DEBUG</overrideRootLogLevel>
@@ -174,7 +174,7 @@
             <plugin>
                 <groupId>com.lazerycode.jmeter</groupId>
                 <artifactId>jmeter-analysis-maven-plugin</artifactId>
-                <version>1.0.4</version>
+                <version>1.0.6</version>
                 <configuration>
                     <source>${project.build.directory}/jmeter/results/SimpleWebservicePerformanceTest.jtl</source>
                 </configuration>
