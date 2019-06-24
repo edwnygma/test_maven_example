@@ -35,10 +35,10 @@
 
     <profiles>
         <profile>
-            <id>jenkins</id>
+            <id>webapp</id>
             <properties>
                 <performancetest.webservice.host>tomcat7-example-webapp.mlex.cloudbees.net</performancetest.webservice.host>
-                <performancetest.webservice.port>80</performancetest.webservice.port>
+                <performancetest.webservice.port>8078</performancetest.webservice.port>
                 <performancetest.threadCount>5</performancetest.threadCount>
                 <performancetest.loopCount>5</performancetest.loopCount>
             </properties>
